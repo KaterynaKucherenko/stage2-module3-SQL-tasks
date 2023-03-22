@@ -10,4 +10,3 @@ ALTER TABLE payment ADD CONSTRAINT payment_student_id_fkey FOREIGN KEY (student_
 
 
 
-   
