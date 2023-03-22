@@ -1,0 +1,9 @@
+ALTER TABLE student MODIFY birthday DATE NOT NULL;
+ALTER TABLE mark MODIFY mark INT NOT NULL CHECK (mark BETWEEN 1 AND 10 );
+ALTER TABLE subject MODIFY grade INT CHECK ( grade BETWEEN 1 AND 5);
+ALTER TABLE student MODIFY student_id INT NOT NULL ;
+ALTER TABLE subject MODIFY subject_id INT NOT NULL ;
+ALTER TABLE paymenttype MODIFY name VARCHAR(45) UNIQUE ;
+ALTER TABLE payment MODIFY type_id BIGINT NOT NULL ;
+ALTER TABLE payment MODIFY amount decimal NOT NULL ;
+ALTER TABLE payment MODIFY payment_date DateTime NOT NULL ;
